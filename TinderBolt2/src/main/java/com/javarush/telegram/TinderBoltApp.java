@@ -10,11 +10,9 @@ import org.telegram.telegrambots.meta.api.objects.*;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 import org.telegram.telegrambots.updatesreceivers.DefaultBotSession;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
+import java.util.Properties;
 
 import static com.javarush.telegram.Tokens.*;
 
@@ -25,17 +23,12 @@ public class TinderBoltApp extends MultiSessionTelegramBot {
     private UserInfo me;
     private int questionCount;
     private ArrayList<String> messageList = new ArrayList<>();
+
+
+
     public TinderBoltApp() {
         super(TELEGRAM_BOT_NAME, TELEGRAM_BOT_TOKEN);
     }
-
-
-
-
-
-
-
-
     @Override
     public void onUpdateEventReceived(Update update) {
         //TODO: основной функционал бота будем писать здесь

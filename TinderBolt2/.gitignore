@@ -36,4 +36,5 @@ build/
 
 ### Mac OS ###
 .DS_Store
-/src/main/java/com/javarush/telegram/Tokens.java
+src/main/resources/config/gpt.config
+src/main/resources/config/tgBot.config
