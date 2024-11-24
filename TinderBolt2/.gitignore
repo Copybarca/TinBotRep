@@ -36,5 +36,6 @@ build/
 
 ### Mac OS ###
 .DS_Store
-src/main/resources/config/gpt.config
-src/main/resources/config/tgBot.config
+/src/main/resources/config/gpt
+/src/main/resources/config/tgBot
+
